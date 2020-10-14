@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>The Samurai Path</title>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <!-- Latest compiled and minified CSS -->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+ <link rel="stylesheet" href="fightPage.css" />
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+  <script>
+    function lotusScript() {
+      var sourceOfPicture = "lotusLogo.png";
+      var img = document.getElementById('lotusLogo');
+      var text = document.getElementById('textLotus');
+      img.src = sourceOfPicture.replace('90x90', '225x225');
+      if (img.style.display == "block") {
+        img.style.display = "none";
+        text.style.display = "none";
+      }else{
+        img.style.display = "block";
+        text.style.display = "block";
+      }
+    }
+  </script>
+  <script>
+    function dragonScript() {
+      var sourceOfPicture = "dragonLogo.png";
+      var img = document.getElementById('dragonLogo')
+      var text = document.getElementById('textDragon');
+      img.src = sourceOfPicture.replace('90x90', '225x225');
+      if (img.style.display == "block") {
+        img.style.display = "none";
+        text.style.display = "none";
+      }else{
+        img.style.display = "block";
+        text.style.display = "block";
+      }
+    }
+  </script>
+  <script>
+    function kamiScript() {
+      var sourceOfPicture = "kamiLogo.png";
+      var img = document.getElementById('kamiLogo')
+      var text = document.getElementById('textKami');
+      img.src = sourceOfPicture.replace('90x90', '225x225');
+      if (img.style.display == "block") {
+        img.style.display = "none";
+        text.style.display = "none";
+      }else{
+        img.style.display = "block";
+        text.style.display = "block";
+      }
+    }
+  </script>
+  <div class = "container" id = "mainLogoContainer">
+    <img src="mainLogo.png" class="rounded-circle" alt="Can't show the image" id = "mainLogo">
+  </div>
+  <div class = "container" id = "buttonContainer">
+    <button type="button" class="btn btn-dark" id = "lotusButton" onpointerenter="lotusScript()"
+    onpointerout="lotusScript()">Join the Lotus</button>
+    <button type="button" class="btn btn-dark" id = "kamiButton" onpointerenter="kamiScript()"
+    onpointerout="kamiScript()">Join the Kami</button>
+    <button type="button" class="btn btn-dark" id = "dragonButton" onpointerenter="dragonScript()"
+    onpointerout="dragonScript()">Join the Dragons</button>
+  </div>
+  <div class = "container" id = "descriptionContainers">
+    <img class="lotusLogo" id = "lotusLogo" src = "lotusLogo" alt="Can't show the image"
+    style = "display:none;">
+    <img class= "dragonLogo" id = "dragonLogo" src = "dragonLogo" alt="Can't show the image"
+    style = "display:none;">
+    <img class= "kamiLogo" id = "kamiLogo" src = "kamiLogo" alt="Can't show the image"
+    style = "display:none;">
+  </div>
+  <div class = "container" id = "textDescriptionContainer">
+    <p id = "textLotus" style="display:none;"> Los lotus es la facción que representa la innovación
+    tecnológica y social. Con una democracia bien establecida, son conocidos por sus descubrimientos
+    a lo largo de los años. Perteneced al consejo de los Lotus para dominar Japón abrumando al resto
+    de facciones con vuestros inventos.</p>
+    <p id = "textKami" style="display:none;"> Los kami es la facción que representa la innovación
+    tecnológica y social. Con una democracia bien establecida, son conocidos por sus descubrimientos
+    a lo largo de los años. Perteneced al consejo de los Lotus para dominar Japón abrumando al resto
+    de facciones con vuestros inventos.</p>
+    <p id = "textDragon" style="display:none;"> Los dragon es la facción que representa la innovación
+    tecnológica y social. Con una democracia bien establecida, son conocidos por sus descubrimientos
+    a lo largo de los años. Perteneced al consejo de los Lotus para dominar Japón abrumando al resto
+    de facciones con vuestros inventos.</p>
+  </div>
+</body>
+</html>
